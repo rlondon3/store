@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2023-03-24T06:37:18.801Z",
-    "end": "2023-03-24T06:37:18.869Z",
-    "duration": 68,
+    "start": "2023-03-24T07:18:15.079Z",
+    "end": "2023-03-24T07:18:15.139Z",
+    "duration": 60,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "6ea036ea-7cc2-4a73-a7c4-e18db361aeb5",
+      "uuid": "b77176ce-2835-4b5a-8558-2e70b3acabde",
       "title": "",
       "fullFile": "C:\\Users\\rlond\\Desktop\\Code\\store\\backend\\test\\test.js",
       "file": "\\test\\test.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "f55e0f00-019a-45ad-bb23-944f7611d803",
+          "uuid": "26621dbb-056c-4130-8393-d61e29feb0e3",
           "title": "Mongoose",
           "fullFile": "C:\\Users\\rlond\\Desktop\\Code\\store\\backend\\test\\test.js",
           "file": "\\test\\test.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: create connection in \"Mongoose\"",
               "fullTitle": "Mongoose \"before all\" hook: create connection in \"Mongoose\"",
               "timedOut": false,
-              "duration": 52,
+              "duration": 47,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "conn_dev  = await mongoose.createConnection(mongo_test_uri).asPromise();\nconn_test = await mongoose.createConnection(mongo_dev_uri).asPromise();\nreturn;",
               "err": {},
-              "uuid": "12b16217-662b-4f56-ae81-f6cbd269cf7f",
-              "parentUUID": "f55e0f00-019a-45ad-bb23-944f7611d803",
+              "uuid": "a6a59512-faa8-4da5-91f2-9465cb6223a5",
+              "parentUUID": "26621dbb-056c-4130-8393-d61e29feb0e3",
               "isHook": true,
               "skipped": false
             }
@@ -64,10 +64,10 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "assert.rejects(async () => {\n    conn_invalid = await mongoose.createConnection(mongo_invalid_uri).asPromise();\n  }, (err) => err === 'Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\"');",
+              "code": "assert.rejects(async () => {\n    return conn_invalid = await mongoose.createConnection(mongo_invalid_uri).asPromise();\n  }, (err) => err === 'Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\"');",
               "err": {},
-              "uuid": "8229ab89-6813-41ef-80ab-15b2692ae1ec",
-              "parentUUID": "f55e0f00-019a-45ad-bb23-944f7611d803",
+              "uuid": "e2c92c0e-a5d2-4d8c-bc27-450f78a9b5d4",
+              "parentUUID": "26621dbb-056c-4130-8393-d61e29feb0e3",
               "isHook": false,
               "skipped": false
             },
@@ -75,7 +75,7 @@
               "title": "should connect to Spec Test DB",
               "fullTitle": "Mongoose should connect to Spec Test DB",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -84,8 +84,8 @@
               "context": null,
               "code": "const ready = conn_test.readyState;\n\nassert.equal(ready, 1);\ndone();",
               "err": {},
-              "uuid": "5486e71e-ca8e-4978-9e34-a46f95749ed6",
-              "parentUUID": "f55e0f00-019a-45ad-bb23-944f7611d803",
+              "uuid": "4f45ade5-c778-4c74-ba1c-ee013683570c",
+              "parentUUID": "26621dbb-056c-4130-8393-d61e29feb0e3",
               "isHook": false,
               "skipped": false
             },
@@ -102,22 +102,22 @@
               "context": null,
               "code": "const ready = conn_dev.readyState;\n\nassert.equal(ready, 1);\ndone();",
               "err": {},
-              "uuid": "1beee118-a1f4-4dcf-a492-de1658ebf758",
-              "parentUUID": "f55e0f00-019a-45ad-bb23-944f7611d803",
+              "uuid": "9f80b725-c353-4e96-af8a-e9c9b219431f",
+              "parentUUID": "26621dbb-056c-4130-8393-d61e29feb0e3",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "8229ab89-6813-41ef-80ab-15b2692ae1ec",
-            "5486e71e-ca8e-4978-9e34-a46f95749ed6",
-            "1beee118-a1f4-4dcf-a492-de1658ebf758"
+            "e2c92c0e-a5d2-4d8c-bc27-450f78a9b5d4",
+            "4f45ade5-c778-4c74-ba1c-ee013683570c",
+            "9f80b725-c353-4e96-af8a-e9c9b219431f"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2,
+          "duration": 1,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
