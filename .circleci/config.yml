@@ -5,7 +5,7 @@ workflows:
   test-env-vars:
     jobs:
       - run_tests:
-          context: auth-user-wci
+          context: store
 jobs:
   run_tests:
     docker: #where things will be ran(docker, windows, mac, virtual machine)
@@ -14,36 +14,36 @@ jobs:
         environment:
           MONGO_USERNAME: mongouser
           MONGO_PASSWORD: mongopass
-      steps:
-        - run:
-            name: MongoDB Install
-            command: |
-              sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
-              echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
-              sudo apt-get update
-              sudo apt-get install -y mongodb-org-shell
-        - setup_remote_docker
-        - run:
-            name: Waiting for Mongo
-            command: dockerize -wait tcp://localhost:27017 -timeout 1m
-        - node/install:
-            node-version: "14.13.1"
-        - checkout
-        - node/install-packages:
-            cache-path: ./node_modules
-            override-ci-command: npm install
-        - run:
-            name: Get versions
-            command: |
-              node -v
-              npm -v
-              mongo --version
-              mongo localhost --eval "db.version()"
-        - run:
-            name: Run Unit Tests
-            command: |
-              ./node_modules/mocha/bin/mocha tests/ --reporter mochawesome --reporter-options reportDir=test-results,reportFilename=test-results
-        - store_unit_tests_results:
-            path: test-results
-        - store_artifacts:
-            path: test-results
+    steps:
+      - run:
+          name: MongoDB Install
+          command: |
+            sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
+            echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
+            sudo apt-get update
+            sudo apt-get install -y mongodb-org-shell
+      - setup_remote_docker
+      - run:
+          name: Waiting for Mongo
+          command: dockerize -wait tcp://localhost:27017 -timeout 1m
+      - node/install:
+          node-version: "14.13.1"
+      - checkout
+      - node/install-packages:
+          cache-path: ./node_modules
+          override-ci-command: npm install
+      - run:
+          name: Get versions
+          command: |
+            node -v
+            npm -v
+            mongo --version
+            mongo localhost --eval "db.version()"
+      - run:
+          name: Run Unit Tests
+          command: |
+            ./node_modules/mocha/bin/mocha tests/ --reporter mochawesome --reporter-options reportDir=test-results,reportFilename=test-results
+      - store_unit_tests_results:
+          path: test-results
+      - store_artifacts:
+          path: test-results
