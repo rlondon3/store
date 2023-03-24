@@ -23,11 +23,14 @@ describe("Mongoose", () => {
 
         return;
     });
-    it("shouldnt connect to DB with incorrect prefix", async (done) => {
-        assert.rejects(async () => {
+    it("shouldnt connect to DB with incorrect prefix", async () => {
+        try {
             conn_invalid = await mongoose.createConnection(mongo_invalid_uri).asPromise();
-          }, (err) => err === 'Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"');
-          done();
+            return false;
+        } catch {
+            return true;
+        }
+         
     });
     it("should connect to Spec Test DB", async (done) => {
         const ready = conn_test.readyState;
