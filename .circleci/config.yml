@@ -2,7 +2,7 @@ version: 2.1
 orbs:
   node: circleci/node@5.0.2
 workflows:
-  test-env-vars:
+  build-tests:
     jobs:
       - run_tests:
           context: store
