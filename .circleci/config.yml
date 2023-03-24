@@ -39,3 +39,11 @@ jobs:
               npm -v
               mongo --version
               mongo localhost --eval "db.version()"
+        - run:
+            name: Run Unit Tests
+            command: |
+              ./node_modules/mocha/bin/mocha tests/ --reporter mochawesome --reporter-options reportDir=test-results,reportFilename=test-results
+        - store_unit_tests_results:
+            path: test-results
+        - store_artifacts:
+            path: test-results
