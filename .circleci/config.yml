@@ -42,4 +42,4 @@ jobs:
       - run:
           name: Run Unit Tests
           command: |
-            ./node_modules/mocha/bin/mocha tests/ --reporter mochawesome --reporter-options reportDir=test-results,reportFilename=test-results
+            node ./node_modules/mocha/bin/mocha tests/ --reporter mochawesome --reporter-options reportDir=test-results,reportFilename=test-results
