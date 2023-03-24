@@ -12,22 +12,28 @@ const mongo_test_uri = process.env.SPEC_TEST_DB;
 const mongo_dev_uri = process.env.DEV_MONGODB;
 const mongo_invalid_uri = process.env.INVALID_DB;
 
-describe("Mongoose", () => {
+describe('Mongoose', () => {
     let conn_dev;
     let conn_test;
     let conn_invalid;
     
     before("create connection", async () => {
-        this.enableTimeouts(false); 
         conn_dev  = await mongoose.createConnection(mongo_test_uri).asPromise();
         conn_test = await mongoose.createConnection(mongo_dev_uri).asPromise();
 
         return;
     });
-    it("shouldnt connect to DB with incorrect prefix", async () => {
-        assert.rejects(async () => {
-            conn_invalid = await mongoose.createConnection(mongo_invalid_uri).asPromise();
-          }, (err) => err === 'Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"');
+    it("shouldnt connect to DB with incorrect prefix", async (done) => {
+        conn_invalid = mongoose.createConnection(mongo_invalid_uri);
+        const ready = conn_invalid.readyState;
+        
+        if (assert.equal(ready, 0) === 0) {
+            assert.rejects(async () => {
+                conn_invalid = await mongoose.createConnection(mongo_invalid_uri).asPromise();
+            }, (err) => err === 'Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"');
+        };
+        done();
+        
     });
     it("should connect to Spec Test DB", async (done) => {
         const ready = conn_test.readyState;
