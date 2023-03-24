@@ -40,6 +40,6 @@ jobs:
             mongo --version
             mongo localhost --eval "db.version()"
       - run:
-          name: Run Unit Tests
+          name: Run Database Unit Tests
           command: |
-            node ./node_modules/mocha/bin/mocha tests/ --reporter mochawesome --reporter-options reportDir=test-results,reportFilename=test-results
+            node ./node_modules/mocha/bin/mocha ./test/test.js --reporter mochawesome --reporter-options reportDir=test-results,reportFilename=test-results
