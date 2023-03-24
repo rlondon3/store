@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend for online shops",
+  "main": "server.js",
+  "scripts": {
+    "test": "set ENV=test && mocha --reporter spec",
+    "dev": "nodemon src/server.js"
+  },
+  "author": "Ralph Smith",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "joi": "^17.9.0",
+    "mocha": "^10.2.0",
+    "mongoose": "^6.9.0",
+    "nodemon": "^2.0.21"
+  }
+}
