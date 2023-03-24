@@ -18,13 +18,13 @@ describe("Mongoose", () => {
     let conn_invalid;
     
     before("create connection", async () => {
+        this.enableTimeouts(false); 
         conn_dev  = await mongoose.createConnection(mongo_test_uri).asPromise();
         conn_test = await mongoose.createConnection(mongo_dev_uri).asPromise();
 
         return;
     });
     it("shouldnt connect to DB with incorrect prefix", async () => {
-        this.enableTimeouts(false) 
         assert.rejects(async () => {
             conn_invalid = await mongoose.createConnection(mongo_invalid_uri).asPromise();
           }, (err) => err === 'Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"');
