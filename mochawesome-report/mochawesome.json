@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2023-03-24T07:18:15.079Z",
-    "end": "2023-03-24T07:18:15.139Z",
-    "duration": 60,
+    "start": "2023-03-24T16:48:56.843Z",
+    "end": "2023-03-24T16:48:56.885Z",
+    "duration": 42,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "b77176ce-2835-4b5a-8558-2e70b3acabde",
+      "uuid": "3ff0d25f-46d1-46f3-8aa7-ba6a35d836d4",
       "title": "",
       "fullFile": "C:\\Users\\rlond\\Desktop\\Code\\store\\backend\\test\\test.js",
       "file": "\\test\\test.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "26621dbb-056c-4130-8393-d61e29feb0e3",
+          "uuid": "ad0b7a6c-4549-4502-9c61-73042467b18c",
           "title": "Mongoose",
           "fullFile": "C:\\Users\\rlond\\Desktop\\Code\\store\\backend\\test\\test.js",
           "file": "\\test\\test.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: create connection in \"Mongoose\"",
               "fullTitle": "Mongoose \"before all\" hook: create connection in \"Mongoose\"",
               "timedOut": false,
-              "duration": 47,
+              "duration": 32,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "conn_dev  = await mongoose.createConnection(mongo_test_uri).asPromise();\nconn_test = await mongoose.createConnection(mongo_dev_uri).asPromise();\nreturn;",
               "err": {},
-              "uuid": "a6a59512-faa8-4da5-91f2-9465cb6223a5",
-              "parentUUID": "26621dbb-056c-4130-8393-d61e29feb0e3",
+              "uuid": "273fb6c5-f0e4-445d-a266-18585995fee5",
+              "parentUUID": "ad0b7a6c-4549-4502-9c61-73042467b18c",
               "isHook": true,
               "skipped": false
             }
@@ -64,10 +64,10 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "assert.rejects(async () => {\n    return conn_invalid = await mongoose.createConnection(mongo_invalid_uri).asPromise();\n  }, (err) => err === 'Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\"');",
+              "code": "assert.rejects(async () => {\n    conn_invalid = await mongoose.createConnection(mongo_invalid_uri).asPromise();\n  }, (err) => err === 'Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\"');\n  done();",
               "err": {},
-              "uuid": "e2c92c0e-a5d2-4d8c-bc27-450f78a9b5d4",
-              "parentUUID": "26621dbb-056c-4130-8393-d61e29feb0e3",
+              "uuid": "2ab8fa97-3341-4a90-88be-c79a3fab3557",
+              "parentUUID": "ad0b7a6c-4549-4502-9c61-73042467b18c",
               "isHook": false,
               "skipped": false
             },
@@ -84,8 +84,8 @@
               "context": null,
               "code": "const ready = conn_test.readyState;\n\nassert.equal(ready, 1);\ndone();",
               "err": {},
-              "uuid": "4f45ade5-c778-4c74-ba1c-ee013683570c",
-              "parentUUID": "26621dbb-056c-4130-8393-d61e29feb0e3",
+              "uuid": "2cf30ba7-5f4a-479e-9a17-8cd96cadf9c5",
+              "parentUUID": "ad0b7a6c-4549-4502-9c61-73042467b18c",
               "isHook": false,
               "skipped": false
             },
@@ -102,17 +102,17 @@
               "context": null,
               "code": "const ready = conn_dev.readyState;\n\nassert.equal(ready, 1);\ndone();",
               "err": {},
-              "uuid": "9f80b725-c353-4e96-af8a-e9c9b219431f",
-              "parentUUID": "26621dbb-056c-4130-8393-d61e29feb0e3",
+              "uuid": "bc5b6e67-14ec-48dc-979b-b263552dd29d",
+              "parentUUID": "ad0b7a6c-4549-4502-9c61-73042467b18c",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "e2c92c0e-a5d2-4d8c-bc27-450f78a9b5d4",
-            "4f45ade5-c778-4c74-ba1c-ee013683570c",
-            "9f80b725-c353-4e96-af8a-e9c9b219431f"
+            "2ab8fa97-3341-4a90-88be-c79a3fab3557",
+            "2cf30ba7-5f4a-479e-9a17-8cd96cadf9c5",
+            "bc5b6e67-14ec-48dc-979b-b263552dd29d"
           ],
           "failures": [],
           "pending": [],
