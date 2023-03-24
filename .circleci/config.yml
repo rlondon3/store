@@ -5,7 +5,7 @@ workflows:
   test-env-vars:
     jobs:
       - run_tests:
-          context: store
+          context: auth-user-wci
 jobs:
   run_tests:
     docker: #where things will be ran(docker, windows, mac, virtual machine)
