@@ -4,7 +4,7 @@
   "description": "Backend for online shops",
   "main": "server.js",
   "scripts": {
-    "test": "set ENV=test && mocha --reporter mochawesome --require mochawesome/register",
+    "test": "set ENV=test && mocha --reporter mochawesome --require mochawesome/register --exit",
     "dev": "nodemon src/server.js"
   },
   "author": "Ralph Smith",

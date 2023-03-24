@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2023-03-24T20:28:40.087Z",
-    "end": "2023-03-24T20:28:40.157Z",
-    "duration": 70,
+    "start": "2023-03-24T20:32:07.763Z",
+    "end": "2023-03-24T20:32:07.832Z",
+    "duration": 69,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "bf5300e0-dc00-4eaa-b5b9-0f98fdd71dc0",
+      "uuid": "47dd072e-e915-4b02-8f9a-917b3467b9b5",
       "title": "",
       "fullFile": "C:\\Users\\rlond\\Desktop\\Code\\store\\backend\\test\\test.js",
       "file": "\\test\\test.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "6c7602ff-34ea-4058-a3ab-8f62b70fbc38",
+          "uuid": "6baaa4a7-6c0a-4900-87a3-66f9882b43f5",
           "title": "Mongoose",
           "fullFile": "C:\\Users\\rlond\\Desktop\\Code\\store\\backend\\test\\test.js",
           "file": "\\test\\test.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: create connection in \"Mongoose\"",
               "fullTitle": "Mongoose \"before all\" hook: create connection in \"Mongoose\"",
               "timedOut": false,
-              "duration": 52,
+              "duration": 56,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "conn_dev  = await mongoose.createConnection(mongo_test_uri).asPromise();\nconn_test = await mongoose.createConnection(mongo_dev_uri).asPromise();\nassert.rejects(async () => {\n    conn_invalid = await mongoose.createConnection(mongo_invalid_uri).asPromise();\n}, (err) => err === 'Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\"');\nreturn;",
               "err": {},
-              "uuid": "6cc86a73-8247-449c-bcb7-1a5f191ef259",
-              "parentUUID": "6c7602ff-34ea-4058-a3ab-8f62b70fbc38",
+              "uuid": "b02ed62f-858c-4a29-aa4c-6f2f080c80c6",
+              "parentUUID": "6baaa4a7-6c0a-4900-87a3-66f9882b43f5",
               "isHook": true,
               "skipped": false
             }
@@ -66,8 +66,8 @@
               "context": null,
               "code": "let conn_invalid = mongoose.createConnection(mongo_invalid_uri);\nconst ready = conn_invalid.readyState;\nassert.equal(ready, 0);\ndone();",
               "err": {},
-              "uuid": "8be70ce6-f249-42dc-8544-e0506f122aae",
-              "parentUUID": "6c7602ff-34ea-4058-a3ab-8f62b70fbc38",
+              "uuid": "6bd86e76-cb49-4a3e-b941-a54876cec29b",
+              "parentUUID": "6baaa4a7-6c0a-4900-87a3-66f9882b43f5",
               "isHook": false,
               "skipped": false
             },
@@ -84,8 +84,8 @@
               "context": null,
               "code": "const ready = conn_test.readyState;\n\nassert.equal(ready, 1);\ndone();",
               "err": {},
-              "uuid": "1d85c14c-5b64-4b1c-8968-13544463e518",
-              "parentUUID": "6c7602ff-34ea-4058-a3ab-8f62b70fbc38",
+              "uuid": "56d0aaf5-3f5e-4e55-85d8-93bd202624b4",
+              "parentUUID": "6baaa4a7-6c0a-4900-87a3-66f9882b43f5",
               "isHook": false,
               "skipped": false
             },
@@ -102,17 +102,17 @@
               "context": null,
               "code": "const ready = conn_dev.readyState;\n\nassert.equal(ready, 1);\ndone();",
               "err": {},
-              "uuid": "8229f80f-d02c-4de9-a016-d31c9e6b3bff",
-              "parentUUID": "6c7602ff-34ea-4058-a3ab-8f62b70fbc38",
+              "uuid": "8a4b6f96-b010-45c3-a37b-3f4d9a6f5756",
+              "parentUUID": "6baaa4a7-6c0a-4900-87a3-66f9882b43f5",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "8be70ce6-f249-42dc-8544-e0506f122aae",
-            "1d85c14c-5b64-4b1c-8968-13544463e518",
-            "8229f80f-d02c-4de9-a016-d31c9e6b3bff"
+            "6bd86e76-cb49-4a3e-b941-a54876cec29b",
+            "56d0aaf5-3f5e-4e55-85d8-93bd202624b4",
+            "8a4b6f96-b010-45c3-a37b-3f4d9a6f5756"
           ],
           "failures": [],
           "pending": [],
