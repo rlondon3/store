@@ -1,14 +1,14 @@
 {
   "stats": {
-    "suites": 1,
-    "tests": 3,
-    "passes": 3,
+    "suites": 3,
+    "tests": 5,
+    "passes": 5,
     "pending": 0,
     "failures": 0,
-    "start": "2023-03-24T20:32:07.763Z",
-    "end": "2023-03-24T20:32:07.832Z",
-    "duration": 69,
-    "testsRegistered": 3,
+    "start": "2023-03-24T23:33:22.802Z",
+    "end": "2023-03-24T23:33:22.866Z",
+    "duration": 64,
+    "testsRegistered": 5,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,16 +18,16 @@
   },
   "results": [
     {
-      "uuid": "47dd072e-e915-4b02-8f9a-917b3467b9b5",
+      "uuid": "ab1b5427-fc06-4f35-b905-09edff052dcb",
       "title": "",
-      "fullFile": "C:\\Users\\rlond\\Desktop\\Code\\store\\backend\\test\\test.js",
-      "file": "\\test\\test.js",
+      "fullFile": "",
+      "file": "",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "6baaa4a7-6c0a-4900-87a3-66f9882b43f5",
+          "uuid": "6fcc8f24-a36d-4748-a001-c5a0760e34b6",
           "title": "Mongoose",
           "fullFile": "C:\\Users\\rlond\\Desktop\\Code\\store\\backend\\test\\test.js",
           "file": "\\test\\test.js",
@@ -36,7 +36,7 @@
               "title": "\"before all\" hook: create connection in \"Mongoose\"",
               "fullTitle": "Mongoose \"before all\" hook: create connection in \"Mongoose\"",
               "timedOut": false,
-              "duration": 56,
+              "duration": 20,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "conn_dev  = await mongoose.createConnection(mongo_test_uri).asPromise();\nconn_test = await mongoose.createConnection(mongo_dev_uri).asPromise();\nassert.rejects(async () => {\n    conn_invalid = await mongoose.createConnection(mongo_invalid_uri).asPromise();\n}, (err) => err === 'Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\"');\nreturn;",
               "err": {},
-              "uuid": "b02ed62f-858c-4a29-aa4c-6f2f080c80c6",
-              "parentUUID": "6baaa4a7-6c0a-4900-87a3-66f9882b43f5",
+              "uuid": "aa3f57af-548e-4af9-b591-d75de100f0f5",
+              "parentUUID": "6fcc8f24-a36d-4748-a001-c5a0760e34b6",
               "isHook": true,
               "skipped": false
             }
@@ -66,8 +66,8 @@
               "context": null,
               "code": "let conn_invalid = mongoose.createConnection(mongo_invalid_uri);\nconst ready = conn_invalid.readyState;\nassert.equal(ready, 0);\ndone();",
               "err": {},
-              "uuid": "6bd86e76-cb49-4a3e-b941-a54876cec29b",
-              "parentUUID": "6baaa4a7-6c0a-4900-87a3-66f9882b43f5",
+              "uuid": "6087ef9b-425c-421b-8204-e3e77503a560",
+              "parentUUID": "6fcc8f24-a36d-4748-a001-c5a0760e34b6",
               "isHook": false,
               "skipped": false
             },
@@ -84,8 +84,8 @@
               "context": null,
               "code": "const ready = conn_test.readyState;\n\nassert.equal(ready, 1);\ndone();",
               "err": {},
-              "uuid": "56d0aaf5-3f5e-4e55-85d8-93bd202624b4",
-              "parentUUID": "6baaa4a7-6c0a-4900-87a3-66f9882b43f5",
+              "uuid": "338c13fe-f06a-47ad-a388-7a5279d7d41a",
+              "parentUUID": "6fcc8f24-a36d-4748-a001-c5a0760e34b6",
               "isHook": false,
               "skipped": false
             },
@@ -102,22 +102,138 @@
               "context": null,
               "code": "const ready = conn_dev.readyState;\n\nassert.equal(ready, 1);\ndone();",
               "err": {},
-              "uuid": "8a4b6f96-b010-45c3-a37b-3f4d9a6f5756",
-              "parentUUID": "6baaa4a7-6c0a-4900-87a3-66f9882b43f5",
+              "uuid": "b360eb47-ef68-4c84-a99f-b2c17a3d61b5",
+              "parentUUID": "6fcc8f24-a36d-4748-a001-c5a0760e34b6",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "6bd86e76-cb49-4a3e-b941-a54876cec29b",
-            "56d0aaf5-3f5e-4e55-85d8-93bd202624b4",
-            "8a4b6f96-b010-45c3-a37b-3f4d9a6f5756"
+            "6087ef9b-425c-421b-8204-e3e77503a560",
+            "338c13fe-f06a-47ad-a388-7a5279d7d41a",
+            "b360eb47-ef68-4c84-a99f-b2c17a3d61b5"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
           "duration": 1,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "e29b3ba0-53a9-452e-8631-dd7fc026d3e3",
+          "title": "Port Definition",
+          "fullFile": "C:\\Users\\rlond\\Desktop\\Code\\store\\backend\\test\\test.js",
+          "file": "\\test\\test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should pass if defined",
+              "fullTitle": "Port Definition should pass if defined",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(port).to.exist;\ndone();",
+              "err": {},
+              "uuid": "3bb2b871-275a-44a9-84dc-0654c75dbe8c",
+              "parentUUID": "e29b3ba0-53a9-452e-8631-dd7fc026d3e3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3bb2b871-275a-44a9-84dc-0654c75dbe8c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "7923b838-1e73-4997-b0ee-b50ff6fb1107",
+          "title": "Express",
+          "fullFile": "C:\\Users\\rlond\\Desktop\\Code\\store\\backend\\test\\test.js",
+          "file": "\\test\\test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"Express\"",
+              "fullTitle": "Express \"before all\" hook in \"Express\"",
+              "timedOut": false,
+              "duration": 2,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "server.close();\nserver.listen(port, () => {\n    console.log(`spec test server should open on port ${port}`);\n    done();\n});",
+              "err": {},
+              "uuid": "70dae5cc-fd7f-4209-a153-871d2c83aaa9",
+              "parentUUID": "7923b838-1e73-4997-b0ee-b50ff6fb1107",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Express\"",
+              "fullTitle": "Express \"after all\" hook in \"Express\"",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "server.close();\nconsole.log(`spec test server should close on port ${port}`);",
+              "err": {},
+              "uuid": "643a566d-4bd4-4d6b-acf7-8c16753bde1d",
+              "parentUUID": "7923b838-1e73-4997-b0ee-b50ff6fb1107",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "spec test application should connect with status 200",
+              "fullTitle": "Express spec test application should connect with status 200",
+              "timedOut": false,
+              "duration": 19,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "return await request.get('/', (req, res) => {\n    expect(res.status).to.equal(200);\n});",
+              "err": {},
+              "uuid": "0198b0e0-1958-40de-b931-de461a1e120b",
+              "parentUUID": "7923b838-1e73-4997-b0ee-b50ff6fb1107",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0198b0e0-1958-40de-b931-de461a1e120b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 19,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

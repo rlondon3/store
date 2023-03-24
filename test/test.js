@@ -1,13 +1,21 @@
-const assert = require("assert");
+const assert = require('assert');
+const chai = require('chai');
 const dotenv = require("dotenv");
+const supertest = require('supertest');
+const {port, server } = require("../src/server");
+
+const request = supertest(server);
+
+//Init Chai expect
+const expect = chai.expect;
 
 //Config environment variables
 dotenv.config();
 
-//init Mongoose and connect
+//init Mongoose
 const mongoose = require("mongoose");
 
-//DB Environment Variables
+//Environment Variables
 const mongo_test_uri = process.env.SPEC_TEST_DB;
 const mongo_dev_uri = process.env.DEV_MONGODB;
 const mongo_invalid_uri = process.env.INVALID_DB;
@@ -45,4 +53,28 @@ describe('Mongoose', () => {
         assert.equal(ready, 1);
         done();
     });
+});
+describe('Port Definition', () => {
+    it ('should pass if defined', (done) => {
+        expect(port).to.exist;
+        done();
+    });
+})
+describe('Express', () => {
+    before((done) => {
+        server.close();
+        server.listen(port, () => {
+            console.log(`spec test server should open on port ${port}`);
+            done();
+        });
+    });
+    after(() => {
+        server.close();
+        console.log(`spec test server should close on port ${port}`);
+    })
+    it('spec test application should connect with status 200', async () => {
+        return await request.get('/', (req, res) => {
+            expect(res.status).to.equal(200);
+        });
+    })
 });
