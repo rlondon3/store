@@ -27,7 +27,7 @@ jobs:
           name: Waiting for Mongo
           command: dockerize -wait tcp://localhost:27017 -timeout 1m
       - node/install:
-          node-version: "14.18.0"
+          node-version: "14.18.0" #not sure why its failing
       - checkout
       - node/install-packages:
           cache-path: ./node_modules
