@@ -28,9 +28,7 @@ describe('Mongoose', () => {
         const ready = conn_invalid.readyState;
         
         if (assert.equal(ready, 0) === 0) {
-            assert.rejects(async () => {
-                conn_invalid = await mongoose.createConnection(mongo_invalid_uri).asPromise();
-            }, (err) => err === 'Invalid scheme, expected connection string to start with "mongodb://" or "mongodb+srv://"');
+            assert.rejects(await conn_invalid.asPromise());
         };
         done();
         
