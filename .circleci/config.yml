@@ -42,4 +42,4 @@ jobs:
       - run:
           name: Run Database Unit Tests
           command: |
-            "node ./node_modules/mocha/bin/mocha ./test/test.js --reporter mochawesome --reporter-options reportDir=test-results,reportFilename=test-results"
+            node ./node_modules/mocha/bin/mocha ./test/test.js --reporter mochawesome --reporter-options reportDir=test-results,reportFilename=test-results --exit
