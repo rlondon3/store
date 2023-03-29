@@ -1,14 +1,14 @@
 {
   "stats": {
-    "suites": 15,
-    "tests": 48,
-    "passes": 48,
+    "suites": 17,
+    "tests": 54,
+    "passes": 54,
     "pending": 0,
     "failures": 0,
-    "start": "2023-03-29T16:04:42.682Z",
-    "end": "2023-03-29T16:04:42.843Z",
-    "duration": 161,
-    "testsRegistered": 48,
+    "start": "2023-03-29T16:40:19.189Z",
+    "end": "2023-03-29T16:40:19.359Z",
+    "duration": 170,
+    "testsRegistered": 54,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "698c1315-e306-469a-8347-eeeb91983811",
+      "uuid": "5ea3bf9b-bc71-4171-84a0-76982d97b5ec",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "e83310ab-c499-4fa3-aaaa-a6007afd9410",
+          "uuid": "c89e2a23-b40f-4e31-8f3f-38f8719678d6",
           "title": "Order Model",
           "fullFile": "C:\\Users\\rlond\\Desktop\\Code\\store\\backend\\src\\models\\test\\order-test.js",
           "file": "\\src\\models\\test\\order-test.js",
@@ -47,15 +47,15 @@
               "context": null,
               "code": "expect(Order).to.exist;",
               "err": {},
-              "uuid": "e5117552-a85a-4dbd-884b-c71e4cbc53e0",
-              "parentUUID": "e83310ab-c499-4fa3-aaaa-a6007afd9410",
+              "uuid": "0072d895-500e-4813-afa0-62659c2d671a",
+              "parentUUID": "c89e2a23-b40f-4e31-8f3f-38f8719678d6",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "e5117552-a85a-4dbd-884b-c71e4cbc53e0"
+            "0072d895-500e-4813-afa0-62659c2d671a"
           ],
           "failures": [],
           "pending": [],
@@ -66,7 +66,7 @@
           "_timeout": 2000
         },
         {
-          "uuid": "2470fa86-edae-4081-8ab9-6a140d1fc7a2",
+          "uuid": "526caaf4-e18a-49ef-b94a-dae03807f791",
           "title": "Order Schema",
           "fullFile": "C:\\Users\\rlond\\Desktop\\Code\\store\\backend\\src\\models\\test\\order-test.js",
           "file": "\\src\\models\\test\\order-test.js",
@@ -77,7 +77,7 @@
               "title": "should be defined",
               "fullTitle": "Order Schema should be defined",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -86,8 +86,8 @@
               "context": null,
               "code": "expect(order_schema).to.exist;",
               "err": {},
-              "uuid": "5cb8aa73-f42b-4dae-b516-f02d67c4d8b4",
-              "parentUUID": "2470fa86-edae-4081-8ab9-6a140d1fc7a2",
+              "uuid": "26143fd6-2b36-4202-87d3-8a339d924198",
+              "parentUUID": "526caaf4-e18a-49ef-b94a-dae03807f791",
               "isHook": false,
               "skipped": false
             },
@@ -104,8 +104,8 @@
               "context": null,
               "code": "expect(order_schema.obj)\n.which.is.an('object')\n.and.has.property('user_id')",
               "err": {},
-              "uuid": "4f02fa77-807a-4668-a61b-99e95d59e8e9",
-              "parentUUID": "2470fa86-edae-4081-8ab9-6a140d1fc7a2",
+              "uuid": "2074c34b-d578-4102-90a0-41919090322e",
+              "parentUUID": "526caaf4-e18a-49ef-b94a-dae03807f791",
               "isHook": false,
               "skipped": false
             },
@@ -122,28 +122,28 @@
               "context": null,
               "code": "expect(order_schema.obj)\n.which.is.an('object')\n.and.has.property('order_status')",
               "err": {},
-              "uuid": "99177f72-0f45-4abc-9fd0-b7d1f75bf9b1",
-              "parentUUID": "2470fa86-edae-4081-8ab9-6a140d1fc7a2",
+              "uuid": "0ab80fa7-6c47-4d6b-834b-da93d5ebddab",
+              "parentUUID": "526caaf4-e18a-49ef-b94a-dae03807f791",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "5cb8aa73-f42b-4dae-b516-f02d67c4d8b4",
-            "4f02fa77-807a-4668-a61b-99e95d59e8e9",
-            "99177f72-0f45-4abc-9fd0-b7d1f75bf9b1"
+            "26143fd6-2b36-4202-87d3-8a339d924198",
+            "2074c34b-d578-4102-90a0-41919090322e",
+            "0ab80fa7-6c47-4d6b-834b-da93d5ebddab"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2,
+          "duration": 1,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "8f9d5a2c-29ed-440b-986e-ee41378cf18a",
+          "uuid": "517ecb70-d302-4a9f-b39c-08c10fb61498",
           "title": "Product Ordered Model",
           "fullFile": "C:\\Users\\rlond\\Desktop\\Code\\store\\backend\\src\\models\\test\\product_ordered-test.js",
           "file": "\\src\\models\\test\\product_ordered-test.js",
@@ -163,15 +163,15 @@
               "context": null,
               "code": "expect(Product_Ordered).to.exist;",
               "err": {},
-              "uuid": "fdf69827-b7e7-49da-9724-534fe153ed9a",
-              "parentUUID": "8f9d5a2c-29ed-440b-986e-ee41378cf18a",
+              "uuid": "7f16861e-c9a0-4d3e-9e3a-08068ee1828d",
+              "parentUUID": "517ecb70-d302-4a9f-b39c-08c10fb61498",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "fdf69827-b7e7-49da-9724-534fe153ed9a"
+            "7f16861e-c9a0-4d3e-9e3a-08068ee1828d"
           ],
           "failures": [],
           "pending": [],
@@ -182,7 +182,7 @@
           "_timeout": 2000
         },
         {
-          "uuid": "b161d4ce-5847-43f7-8074-07274148aec9",
+          "uuid": "6d3b3f71-1d75-48d9-8b25-3413e61a5463",
           "title": "Product Ordered Schema",
           "fullFile": "C:\\Users\\rlond\\Desktop\\Code\\store\\backend\\src\\models\\test\\product_ordered-test.js",
           "file": "\\src\\models\\test\\product_ordered-test.js",
@@ -202,8 +202,8 @@
               "context": null,
               "code": "expect(product_ordered_schema).to.exist;",
               "err": {},
-              "uuid": "29d9ab1f-e2b7-4970-b81e-107e7ebf1652",
-              "parentUUID": "b161d4ce-5847-43f7-8074-07274148aec9",
+              "uuid": "6c80eb1d-4d8d-486e-9414-cbb754e70033",
+              "parentUUID": "6d3b3f71-1d75-48d9-8b25-3413e61a5463",
               "isHook": false,
               "skipped": false
             },
@@ -220,8 +220,8 @@
               "context": null,
               "code": "expect(product_ordered_schema.obj)\n.which.is.an('object')\n.and.has.property('quantity');",
               "err": {},
-              "uuid": "c1f6386e-0cde-4482-ab0e-a5673e1ef041",
-              "parentUUID": "b161d4ce-5847-43f7-8074-07274148aec9",
+              "uuid": "e2b16498-af29-40a3-8ad3-704fa9a22522",
+              "parentUUID": "6d3b3f71-1d75-48d9-8b25-3413e61a5463",
               "isHook": false,
               "skipped": false
             },
@@ -229,7 +229,7 @@
               "title": "should have a product id key",
               "fullTitle": "Product Ordered Schema should have a product id key",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -238,8 +238,8 @@
               "context": null,
               "code": "expect(product_ordered_schema.obj)\n.which.is.an('object')\n.and.has.property('product_id');",
               "err": {},
-              "uuid": "43d6c0e4-59c0-4dbc-b08f-f8ec1a33cbfd",
-              "parentUUID": "b161d4ce-5847-43f7-8074-07274148aec9",
+              "uuid": "7154b2b8-1927-4213-9fa9-ceafca44b695",
+              "parentUUID": "6d3b3f71-1d75-48d9-8b25-3413e61a5463",
               "isHook": false,
               "skipped": false
             },
@@ -247,7 +247,7 @@
               "title": "should have an order id key",
               "fullTitle": "Product Ordered Schema should have an order id key",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -256,29 +256,183 @@
               "context": null,
               "code": "expect(product_ordered_schema.obj)\n.which.is.an('object')\n.and.has.property('order_id');",
               "err": {},
-              "uuid": "c0ecbbff-07c4-4891-a9fd-4105b3ec79e8",
-              "parentUUID": "b161d4ce-5847-43f7-8074-07274148aec9",
+              "uuid": "1758dab1-4fec-4c2a-8746-d0b43bf2faed",
+              "parentUUID": "6d3b3f71-1d75-48d9-8b25-3413e61a5463",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "29d9ab1f-e2b7-4970-b81e-107e7ebf1652",
-            "c1f6386e-0cde-4482-ab0e-a5673e1ef041",
-            "43d6c0e4-59c0-4dbc-b08f-f8ec1a33cbfd",
-            "c0ecbbff-07c4-4891-a9fd-4105b3ec79e8"
+            "6c80eb1d-4d8d-486e-9414-cbb754e70033",
+            "e2b16498-af29-40a3-8ad3-704fa9a22522",
+            "7154b2b8-1927-4213-9fa9-ceafca44b695",
+            "1758dab1-4fec-4c2a-8746-d0b43bf2faed"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 0,
+          "duration": 2,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "3ac6811a-462d-49f0-b3a9-7be6045d38d1",
+          "uuid": "5b723e3e-f7b9-4c05-b2ec-65b997b549d6",
+          "title": "Test Product Ordered",
+          "fullFile": "C:\\Users\\rlond\\Desktop\\Code\\store\\backend\\src\\models\\test\\product_ordered-test.js",
+          "file": "\\src\\models\\test\\product_ordered-test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should hvae a value for id",
+              "fullTitle": "Test Product Ordered should hvae a value for id",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(prod_ordered)\n.which.is.an('object')\n.and.has.property('_id')\n.and.not.equal('undefined');",
+              "err": {},
+              "uuid": "94059fe8-1a13-4db9-9bbb-6dd93d0bb340",
+              "parentUUID": "5b723e3e-f7b9-4c05-b2ec-65b997b549d6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should have a value for quantity",
+              "fullTitle": "Test Product Ordered should have a value for quantity",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(test_prod_ordered)\n.which.is.an('object')\n.and.has.property('quantity')\n.and.equal(10);",
+              "err": {},
+              "uuid": "90ee52e5-9113-4b9a-b8f5-8d16257bdea1",
+              "parentUUID": "5b723e3e-f7b9-4c05-b2ec-65b997b549d6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should have a value for order_id from order",
+              "fullTitle": "Test Product Ordered should have a value for order_id from order",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(test_prod_ordered)\n.which.is.an('object')\n.and.has.property('order_id')\n.and.equal(order._id);",
+              "err": {},
+              "uuid": "fec59c08-bd68-4a49-aa03-88650e071da1",
+              "parentUUID": "5b723e3e-f7b9-4c05-b2ec-65b997b549d6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should have a value for product_id from product",
+              "fullTitle": "Test Product Ordered should have a value for product_id from product",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(test_prod_ordered)\n.which.is.an('object')\n.and.has.property('product_id')\n.and.equal(product._id);",
+              "err": {},
+              "uuid": "e414ac9f-867c-4853-9b8c-e1816ceb9b9e",
+              "parentUUID": "5b723e3e-f7b9-4c05-b2ec-65b997b549d6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "94059fe8-1a13-4db9-9bbb-6dd93d0bb340",
+            "90ee52e5-9113-4b9a-b8f5-8d16257bdea1",
+            "fec59c08-bd68-4a49-aa03-88650e071da1",
+            "e414ac9f-867c-4853-9b8c-e1816ceb9b9e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "2e224ffc-8b45-4e8d-a119-5e00de34a75a",
+          "title": "Validate Product Ordered Method",
+          "fullFile": "C:\\Users\\rlond\\Desktop\\Code\\store\\backend\\src\\models\\test\\product_ordered-test.js",
+          "file": "\\src\\models\\test\\product_ordered-test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should pass test product ordered with correct schema requirements",
+              "fullTitle": "Validate Product Ordered Method should pass test product ordered with correct schema requirements",
+              "timedOut": false,
+              "duration": 4,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const result = handleProductOrderedErrors(test_prod_ordered);\nexpect(result.error).to.equal(undefined);",
+              "err": {},
+              "uuid": "d0dd0e8c-3b5a-41b0-98ec-964f00512d27",
+              "parentUUID": "2e224ffc-8b45-4e8d-a119-5e00de34a75a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should fail a test product ordered with incorrect schema requirements",
+              "fullTitle": "Validate Product Ordered Method should fail a test product ordered with incorrect schema requirements",
+              "timedOut": false,
+              "duration": 2,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "test_prod_ordered.quantity = \"1\";\nconst result = handleProductOrderedErrors(test_prod_ordered);\nassert.rejects(() => {\n    console.error(result.error.details[0].message);\n}, (err) => err === result.error.details[0].message)",
+              "err": {},
+              "uuid": "6631ebf1-3c5e-4d74-a96c-d50e29c45a01",
+              "parentUUID": "2e224ffc-8b45-4e8d-a119-5e00de34a75a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d0dd0e8c-3b5a-41b0-98ec-964f00512d27",
+            "6631ebf1-3c5e-4d74-a96c-d50e29c45a01"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "efecb511-62f0-447a-b820-0cea8d2776c2",
           "title": "Product Model",
           "fullFile": "C:\\Users\\rlond\\Desktop\\Code\\store\\backend\\src\\models\\test\\product-test.js",
           "file": "\\src\\models\\test\\product-test.js",
@@ -298,15 +452,15 @@
               "context": null,
               "code": "expect(Product).to.exist;",
               "err": {},
-              "uuid": "fe522eb1-e573-432d-91ae-79836be392a4",
-              "parentUUID": "3ac6811a-462d-49f0-b3a9-7be6045d38d1",
+              "uuid": "86091940-7b20-4826-ba95-090f87f6a86e",
+              "parentUUID": "efecb511-62f0-447a-b820-0cea8d2776c2",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "fe522eb1-e573-432d-91ae-79836be392a4"
+            "86091940-7b20-4826-ba95-090f87f6a86e"
           ],
           "failures": [],
           "pending": [],
@@ -317,7 +471,7 @@
           "_timeout": 2000
         },
         {
-          "uuid": "d42407ec-4c96-47ac-83b4-c7f3444b180c",
+          "uuid": "2c7c48a5-a9fa-4866-b8b5-b100a6bc9c86",
           "title": "Product Schema",
           "fullFile": "C:\\Users\\rlond\\Desktop\\Code\\store\\backend\\src\\models\\test\\product-test.js",
           "file": "\\src\\models\\test\\product-test.js",
@@ -337,8 +491,8 @@
               "context": null,
               "code": "expect(product_schema).to.exist;;",
               "err": {},
-              "uuid": "4a84ef39-b75f-4876-a9d2-49173f9f11b3",
-              "parentUUID": "d42407ec-4c96-47ac-83b4-c7f3444b180c",
+              "uuid": "d291ff77-66d9-44f0-ba89-fd3eefc70fd9",
+              "parentUUID": "2c7c48a5-a9fa-4866-b8b5-b100a6bc9c86",
               "isHook": false,
               "skipped": false
             },
@@ -355,8 +509,8 @@
               "context": null,
               "code": "expect(product_schema.obj)\n.which.is.an('object')\n.and.has.property('title');",
               "err": {},
-              "uuid": "7ab428b5-93a6-44af-b616-0b42d631efbe",
-              "parentUUID": "d42407ec-4c96-47ac-83b4-c7f3444b180c",
+              "uuid": "92da7d5b-e10e-42ae-8c1f-c34267b22457",
+              "parentUUID": "2c7c48a5-a9fa-4866-b8b5-b100a6bc9c86",
               "isHook": false,
               "skipped": false
             },
@@ -373,8 +527,8 @@
               "context": null,
               "code": "expect(product_schema.obj)\n.which.is.an('object')\n.and.has.property('description');",
               "err": {},
-              "uuid": "f572d923-ef00-4ab1-954d-7e2e6c0ee17a",
-              "parentUUID": "d42407ec-4c96-47ac-83b4-c7f3444b180c",
+              "uuid": "d20ea1f8-8177-403d-89d5-2c44fa985f3f",
+              "parentUUID": "2c7c48a5-a9fa-4866-b8b5-b100a6bc9c86",
               "isHook": false,
               "skipped": false
             },
@@ -391,18 +545,18 @@
               "context": null,
               "code": "expect(product_schema.obj)\n.which.is.an('object')\n.and.has.property('price');",
               "err": {},
-              "uuid": "af12b23b-15a2-4973-90de-ad40251e9a56",
-              "parentUUID": "d42407ec-4c96-47ac-83b4-c7f3444b180c",
+              "uuid": "41435d21-f762-4340-842d-91c7501e5823",
+              "parentUUID": "2c7c48a5-a9fa-4866-b8b5-b100a6bc9c86",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "4a84ef39-b75f-4876-a9d2-49173f9f11b3",
-            "7ab428b5-93a6-44af-b616-0b42d631efbe",
-            "f572d923-ef00-4ab1-954d-7e2e6c0ee17a",
-            "af12b23b-15a2-4973-90de-ad40251e9a56"
+            "d291ff77-66d9-44f0-ba89-fd3eefc70fd9",
+            "92da7d5b-e10e-42ae-8c1f-c34267b22457",
+            "d20ea1f8-8177-403d-89d5-2c44fa985f3f",
+            "41435d21-f762-4340-842d-91c7501e5823"
           ],
           "failures": [],
           "pending": [],
@@ -413,7 +567,7 @@
           "_timeout": 2000
         },
         {
-          "uuid": "fd4eba8a-c745-4dd1-8ebe-17f85d2b3c47",
+          "uuid": "140a1750-3d9b-4da8-8c05-00cd0b142095",
           "title": "Test Product",
           "fullFile": "C:\\Users\\rlond\\Desktop\\Code\\store\\backend\\src\\models\\test\\product-test.js",
           "file": "\\src\\models\\test\\product-test.js",
@@ -433,8 +587,8 @@
               "context": null,
               "code": "expect(product)\n.which.is.an('object')\n.and.has.property('_id')\n.and.not.equal('undefined');",
               "err": {},
-              "uuid": "1a59033c-a5dd-4271-b3a2-c472eb9b5051",
-              "parentUUID": "fd4eba8a-c745-4dd1-8ebe-17f85d2b3c47",
+              "uuid": "221a8689-02cc-43fa-b9fd-bf2ff3260a87",
+              "parentUUID": "140a1750-3d9b-4da8-8c05-00cd0b142095",
               "isHook": false,
               "skipped": false
             },
@@ -451,8 +605,8 @@
               "context": null,
               "code": "expect(test_product)\n.which.is.an('object')\n.and.has.property('title')\n.and.equal('test product');",
               "err": {},
-              "uuid": "25511a7e-9f06-47a8-a34d-393b48a3456e",
-              "parentUUID": "fd4eba8a-c745-4dd1-8ebe-17f85d2b3c47",
+              "uuid": "fbf786a8-7d19-43d1-a924-a958b76065e5",
+              "parentUUID": "140a1750-3d9b-4da8-8c05-00cd0b142095",
               "isHook": false,
               "skipped": false
             },
@@ -460,7 +614,7 @@
               "title": "should have a value for description",
               "fullTitle": "Test Product should have a value for description",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -469,8 +623,8 @@
               "context": null,
               "code": "expect(test_product)\n.which.is.an('object')\n.and.has.property('description')\n.and.equal('I am a test product for the store backend');",
               "err": {},
-              "uuid": "f6f3fa5c-8036-4523-9fc1-da871f66a4d6",
-              "parentUUID": "fd4eba8a-c745-4dd1-8ebe-17f85d2b3c47",
+              "uuid": "0c9c53f4-449d-47de-bc14-b6359cd505c0",
+              "parentUUID": "140a1750-3d9b-4da8-8c05-00cd0b142095",
               "isHook": false,
               "skipped": false
             },
@@ -487,29 +641,29 @@
               "context": null,
               "code": "expect(test_product)\n.which.is.an('object')\n.and.has.property('price')\n.and.equal(109.99);",
               "err": {},
-              "uuid": "f96380e6-6293-43c6-8360-0efd9c33680f",
-              "parentUUID": "fd4eba8a-c745-4dd1-8ebe-17f85d2b3c47",
+              "uuid": "65038dcf-9b65-4646-9353-0ec03c30c4f0",
+              "parentUUID": "140a1750-3d9b-4da8-8c05-00cd0b142095",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "1a59033c-a5dd-4271-b3a2-c472eb9b5051",
-            "25511a7e-9f06-47a8-a34d-393b48a3456e",
-            "f6f3fa5c-8036-4523-9fc1-da871f66a4d6",
-            "f96380e6-6293-43c6-8360-0efd9c33680f"
+            "221a8689-02cc-43fa-b9fd-bf2ff3260a87",
+            "fbf786a8-7d19-43d1-a924-a958b76065e5",
+            "0c9c53f4-449d-47de-bc14-b6359cd505c0",
+            "65038dcf-9b65-4646-9353-0ec03c30c4f0"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1,
+          "duration": 2,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "dc4ec500-274d-4e7a-9cbb-baf1531ade07",
+          "uuid": "68c24fb1-c961-44a1-9645-4cef83ae69be",
           "title": "Validate Product Method",
           "fullFile": "C:\\Users\\rlond\\Desktop\\Code\\store\\backend\\src\\models\\test\\product-test.js",
           "file": "\\src\\models\\test\\product-test.js",
@@ -520,7 +674,7 @@
               "title": "should pass test product with correct schema requirements",
               "fullTitle": "Validate Product Method should pass test product with correct schema requirements",
               "timedOut": false,
-              "duration": 6,
+              "duration": 2,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -529,8 +683,8 @@
               "context": null,
               "code": "const result = handleProductErrors(test_product);\nexpect(result.error).to.equal(undefined);",
               "err": {},
-              "uuid": "12ff9ad6-b1ca-485c-b08d-f2b2e86b2851",
-              "parentUUID": "dc4ec500-274d-4e7a-9cbb-baf1531ade07",
+              "uuid": "1a74dcb1-9923-485e-96d2-46d1f0149400",
+              "parentUUID": "68c24fb1-c961-44a1-9645-4cef83ae69be",
               "isHook": false,
               "skipped": false
             },
@@ -538,7 +692,7 @@
               "title": "should fail a test product with incorrect schema requirements",
               "fullTitle": "Validate Product Method should fail a test product with incorrect schema requirements",
               "timedOut": false,
-              "duration": 3,
+              "duration": 2,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -547,27 +701,27 @@
               "context": null,
               "code": "test_product.price = \"109.99\";\nconst result = handleProductErrors(test_product);\nassert.rejects(() => {\n    const result = handleProductErrors(test_product);\n}, (err) => err === result.error.details[0].message)",
               "err": {},
-              "uuid": "3d67c317-8d97-4d0f-b462-b86179029b46",
-              "parentUUID": "dc4ec500-274d-4e7a-9cbb-baf1531ade07",
+              "uuid": "aade9b7c-6a8e-404d-b314-56645f9fde77",
+              "parentUUID": "68c24fb1-c961-44a1-9645-4cef83ae69be",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "12ff9ad6-b1ca-485c-b08d-f2b2e86b2851",
-            "3d67c317-8d97-4d0f-b462-b86179029b46"
+            "1a74dcb1-9923-485e-96d2-46d1f0149400",
+            "aade9b7c-6a8e-404d-b314-56645f9fde77"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 9,
+          "duration": 4,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "7c9f43f8-2359-4016-bb1b-966c28d208f4",
+          "uuid": "6ff738d7-edf7-4618-80ff-6e7e65dd3a79",
           "title": "User Model",
           "fullFile": "C:\\Users\\rlond\\Desktop\\Code\\store\\backend\\src\\models\\test\\user-test.js",
           "file": "\\src\\models\\test\\user-test.js",
@@ -587,15 +741,15 @@
               "context": null,
               "code": "expect(User).to.exist;",
               "err": {},
-              "uuid": "0e53a755-a3e0-4155-81c3-ecfe2988c207",
-              "parentUUID": "7c9f43f8-2359-4016-bb1b-966c28d208f4",
+              "uuid": "926e8364-d441-4cf8-b5df-792740410d3a",
+              "parentUUID": "6ff738d7-edf7-4618-80ff-6e7e65dd3a79",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "0e53a755-a3e0-4155-81c3-ecfe2988c207"
+            "926e8364-d441-4cf8-b5df-792740410d3a"
           ],
           "failures": [],
           "pending": [],
@@ -606,7 +760,7 @@
           "_timeout": 2000
         },
         {
-          "uuid": "19278642-8116-4671-bb6d-9c7bab56a330",
+          "uuid": "6b0902eb-4f10-40a3-94d9-e39957db34b0",
           "title": "User Schema",
           "fullFile": "C:\\Users\\rlond\\Desktop\\Code\\store\\backend\\src\\models\\test\\user-test.js",
           "file": "\\src\\models\\test\\user-test.js",
@@ -626,8 +780,8 @@
               "context": null,
               "code": "expect(user_schema).to.exist;",
               "err": {},
-              "uuid": "0c5e561b-5855-4519-8964-19bfb66df86c",
-              "parentUUID": "19278642-8116-4671-bb6d-9c7bab56a330",
+              "uuid": "c74c05d4-0b21-438d-80da-933b5f9a0218",
+              "parentUUID": "6b0902eb-4f10-40a3-94d9-e39957db34b0",
               "isHook": false,
               "skipped": false
             },
@@ -635,7 +789,7 @@
               "title": "should have a first name key",
               "fullTitle": "User Schema should have a first name key",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -644,8 +798,8 @@
               "context": null,
               "code": "expect(user_schema.obj)\n.which.is.an('object')\n.and.has.property('first_name');",
               "err": {},
-              "uuid": "903ae60b-bab2-4493-894f-9ff4aa65a425",
-              "parentUUID": "19278642-8116-4671-bb6d-9c7bab56a330",
+              "uuid": "590ebbb5-e5ac-4232-b965-ec49fc3c9270",
+              "parentUUID": "6b0902eb-4f10-40a3-94d9-e39957db34b0",
               "isHook": false,
               "skipped": false
             },
@@ -662,8 +816,8 @@
               "context": null,
               "code": "expect(user_schema.obj)\n.which.is.an('object')\n.and.has.property('last_name');",
               "err": {},
-              "uuid": "a5c0931b-0c9f-4d29-b0c7-947ed842ae10",
-              "parentUUID": "19278642-8116-4671-bb6d-9c7bab56a330",
+              "uuid": "48c3de1b-7579-4208-a44d-0d411f766ac4",
+              "parentUUID": "6b0902eb-4f10-40a3-94d9-e39957db34b0",
               "isHook": false,
               "skipped": false
             },
@@ -680,8 +834,8 @@
               "context": null,
               "code": "expect(user_schema.obj)\n.which.is.an('object')\n.and.has.property('address');",
               "err": {},
-              "uuid": "34fa86df-ca3c-4bc6-b4b7-1b599f3678b8",
-              "parentUUID": "19278642-8116-4671-bb6d-9c7bab56a330",
+              "uuid": "4b575f89-a325-4c20-98bd-c88a0f216d3b",
+              "parentUUID": "6b0902eb-4f10-40a3-94d9-e39957db34b0",
               "isHook": false,
               "skipped": false
             },
@@ -698,8 +852,8 @@
               "context": null,
               "code": "expect(user_schema.obj)\n.which.is.an('object')\n.and.has.property('city');",
               "err": {},
-              "uuid": "a8849bee-af50-4f71-91e3-dd1de0622c8f",
-              "parentUUID": "19278642-8116-4671-bb6d-9c7bab56a330",
+              "uuid": "b2e47aa9-283c-4b57-8f2a-15e89757ee3b",
+              "parentUUID": "6b0902eb-4f10-40a3-94d9-e39957db34b0",
               "isHook": false,
               "skipped": false
             },
@@ -716,8 +870,8 @@
               "context": null,
               "code": "expect(user_schema.obj)\n.which.is.an('object')\n.and.has.property('state');",
               "err": {},
-              "uuid": "6e6052fd-b2c3-4dff-875c-8d4ce64c8a72",
-              "parentUUID": "19278642-8116-4671-bb6d-9c7bab56a330",
+              "uuid": "4c213528-f7f1-4998-98b8-526fb1b5984d",
+              "parentUUID": "6b0902eb-4f10-40a3-94d9-e39957db34b0",
               "isHook": false,
               "skipped": false
             },
@@ -734,8 +888,8 @@
               "context": null,
               "code": "expect(user_schema.obj)\n.which.is.an('object')\n.and.has.property('zip');",
               "err": {},
-              "uuid": "08b00b14-d6f2-45c2-a35c-7225f202e25c",
-              "parentUUID": "19278642-8116-4671-bb6d-9c7bab56a330",
+              "uuid": "68eb4075-52a6-4b2f-8a35-86cbaa3b299a",
+              "parentUUID": "6b0902eb-4f10-40a3-94d9-e39957db34b0",
               "isHook": false,
               "skipped": false
             },
@@ -743,7 +897,7 @@
               "title": "should have a username key",
               "fullTitle": "User Schema should have a username key",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -752,8 +906,8 @@
               "context": null,
               "code": "expect(user_schema.obj)\n.which.is.an('object')\n.and.has.property('username');",
               "err": {},
-              "uuid": "040a8736-4a53-42a2-81f9-be1bea69b9c1",
-              "parentUUID": "19278642-8116-4671-bb6d-9c7bab56a330",
+              "uuid": "c983b3c0-3ce1-437c-a093-401e6e8a6f61",
+              "parentUUID": "6b0902eb-4f10-40a3-94d9-e39957db34b0",
               "isHook": false,
               "skipped": false
             },
@@ -770,8 +924,8 @@
               "context": null,
               "code": "expect(user_schema.obj)\n.which.is.an('object')\n.and.has.property('email');",
               "err": {},
-              "uuid": "d982c8e4-31b6-406d-b19a-390e0366e026",
-              "parentUUID": "19278642-8116-4671-bb6d-9c7bab56a330",
+              "uuid": "6be47442-d331-4019-b593-922149765df0",
+              "parentUUID": "6b0902eb-4f10-40a3-94d9-e39957db34b0",
               "isHook": false,
               "skipped": false
             },
@@ -788,35 +942,35 @@
               "context": null,
               "code": "expect(user_schema.obj)\n.which.is.an('object')\n.and.has.property('password');",
               "err": {},
-              "uuid": "86b38b5b-6e35-4057-87e4-996c6e0131b2",
-              "parentUUID": "19278642-8116-4671-bb6d-9c7bab56a330",
+              "uuid": "441eff9c-68c7-41c0-b400-b9e437a19bca",
+              "parentUUID": "6b0902eb-4f10-40a3-94d9-e39957db34b0",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "0c5e561b-5855-4519-8964-19bfb66df86c",
-            "903ae60b-bab2-4493-894f-9ff4aa65a425",
-            "a5c0931b-0c9f-4d29-b0c7-947ed842ae10",
-            "34fa86df-ca3c-4bc6-b4b7-1b599f3678b8",
-            "a8849bee-af50-4f71-91e3-dd1de0622c8f",
-            "6e6052fd-b2c3-4dff-875c-8d4ce64c8a72",
-            "08b00b14-d6f2-45c2-a35c-7225f202e25c",
-            "040a8736-4a53-42a2-81f9-be1bea69b9c1",
-            "d982c8e4-31b6-406d-b19a-390e0366e026",
-            "86b38b5b-6e35-4057-87e4-996c6e0131b2"
+            "c74c05d4-0b21-438d-80da-933b5f9a0218",
+            "590ebbb5-e5ac-4232-b965-ec49fc3c9270",
+            "48c3de1b-7579-4208-a44d-0d411f766ac4",
+            "4b575f89-a325-4c20-98bd-c88a0f216d3b",
+            "b2e47aa9-283c-4b57-8f2a-15e89757ee3b",
+            "4c213528-f7f1-4998-98b8-526fb1b5984d",
+            "68eb4075-52a6-4b2f-8a35-86cbaa3b299a",
+            "c983b3c0-3ce1-437c-a093-401e6e8a6f61",
+            "6be47442-d331-4019-b593-922149765df0",
+            "441eff9c-68c7-41c0-b400-b9e437a19bca"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1,
+          "duration": 3,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "23a039be-b16e-42fe-86cc-e13d2e43f24d",
+          "uuid": "ffda92b6-f732-4a10-b383-96b53ae6f036",
           "title": "Test User",
           "fullFile": "C:\\Users\\rlond\\Desktop\\Code\\store\\backend\\src\\models\\test\\user-test.js",
           "file": "\\src\\models\\test\\user-test.js",
@@ -827,7 +981,7 @@
               "title": "should have a value for id",
               "fullTitle": "Test User should have a value for id",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -836,8 +990,8 @@
               "context": null,
               "code": "expect(user)\n.which.is.an('object')\n.and.has.property('_id')\n.and.not.equal('undefined');",
               "err": {},
-              "uuid": "f6450d75-7e96-4171-9cf7-f19ed873e0c1",
-              "parentUUID": "23a039be-b16e-42fe-86cc-e13d2e43f24d",
+              "uuid": "a0b13171-30c5-4210-a582-d248cae5ed54",
+              "parentUUID": "ffda92b6-f732-4a10-b383-96b53ae6f036",
               "isHook": false,
               "skipped": false
             },
@@ -854,8 +1008,8 @@
               "context": null,
               "code": "expect(test_user)\n.which.is.an('object')\n.and.has.property('first_name')\n.and.equal('Ralphie');",
               "err": {},
-              "uuid": "589e7db6-f725-49af-b28d-3c738d79262e",
-              "parentUUID": "23a039be-b16e-42fe-86cc-e13d2e43f24d",
+              "uuid": "c777d15e-8475-407d-ab04-16ec26f15d4f",
+              "parentUUID": "ffda92b6-f732-4a10-b383-96b53ae6f036",
               "isHook": false,
               "skipped": false
             },
@@ -872,8 +1026,8 @@
               "context": null,
               "code": "expect(test_user)\n.which.is.an('object')\n.and.has.property('last_name')\n.and.equal('London');",
               "err": {},
-              "uuid": "b4c6ddfc-b11f-42da-885f-a1f3dd668545",
-              "parentUUID": "23a039be-b16e-42fe-86cc-e13d2e43f24d",
+              "uuid": "2556dd00-5abf-4ddd-a4cf-af6b90a20aa8",
+              "parentUUID": "ffda92b6-f732-4a10-b383-96b53ae6f036",
               "isHook": false,
               "skipped": false
             },
@@ -881,7 +1035,7 @@
               "title": "should have a value for address",
               "fullTitle": "Test User should have a value for address",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -890,8 +1044,8 @@
               "context": null,
               "code": "expect(test_user)\n.which.is.an('object')\n.and.has.property('address')\n.and.equal('3131 Trap Ave');",
               "err": {},
-              "uuid": "f110100a-dd11-4953-985e-95f5d383a26b",
-              "parentUUID": "23a039be-b16e-42fe-86cc-e13d2e43f24d",
+              "uuid": "28bc07c3-237d-4271-b49b-929b88c14d1c",
+              "parentUUID": "ffda92b6-f732-4a10-b383-96b53ae6f036",
               "isHook": false,
               "skipped": false
             },
@@ -908,8 +1062,8 @@
               "context": null,
               "code": "expect(test_user)\n.which.is.an('object')\n.and.has.property('city')\n.and.equal('Atlanta');",
               "err": {},
-              "uuid": "4ae4fbea-6b92-4e6d-a192-ca2cc555fe06",
-              "parentUUID": "23a039be-b16e-42fe-86cc-e13d2e43f24d",
+              "uuid": "5940a5ea-2430-4d17-9cda-f57f1da2825f",
+              "parentUUID": "ffda92b6-f732-4a10-b383-96b53ae6f036",
               "isHook": false,
               "skipped": false
             },
@@ -926,8 +1080,8 @@
               "context": null,
               "code": "expect(test_user)\n.which.is.an('object')\n.and.has.property('state')\n.and.equal('GA');",
               "err": {},
-              "uuid": "6dab7d1a-a779-4fe3-80cc-263989a7cf82",
-              "parentUUID": "23a039be-b16e-42fe-86cc-e13d2e43f24d",
+              "uuid": "888524ae-5743-43d3-9bfe-63b40d11eeb3",
+              "parentUUID": "ffda92b6-f732-4a10-b383-96b53ae6f036",
               "isHook": false,
               "skipped": false
             },
@@ -944,8 +1098,8 @@
               "context": null,
               "code": "expect(test_user)\n.which.is.an('object')\n.and.has.property('zip')\n.and.equal(30032);",
               "err": {},
-              "uuid": "2c0439f4-a192-4f04-b951-0955913d5d74",
-              "parentUUID": "23a039be-b16e-42fe-86cc-e13d2e43f24d",
+              "uuid": "92823716-f071-4414-9511-35c6d8b1ccac",
+              "parentUUID": "ffda92b6-f732-4a10-b383-96b53ae6f036",
               "isHook": false,
               "skipped": false
             },
@@ -953,7 +1107,7 @@
               "title": "should have a value for email",
               "fullTitle": "Test User should have a value for email",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -962,8 +1116,8 @@
               "context": null,
               "code": "expect(test_user)\n.which.is.an('object')\n.and.has.property('email')\n.and.equal('ralphieLondon@store.com');",
               "err": {},
-              "uuid": "bce43e03-83c7-4d39-bfa0-133e87035ee9",
-              "parentUUID": "23a039be-b16e-42fe-86cc-e13d2e43f24d",
+              "uuid": "8dc4aaba-4eb6-4aec-b196-f92726fb69f5",
+              "parentUUID": "ffda92b6-f732-4a10-b383-96b53ae6f036",
               "isHook": false,
               "skipped": false
             },
@@ -980,8 +1134,8 @@
               "context": null,
               "code": "expect(test_user)\n.which.is.an('object')\n.and.has.property('password')\n.and.equal('Store1234!');",
               "err": {},
-              "uuid": "0aecbbe4-929c-4775-a8ff-0d14c6920283",
-              "parentUUID": "23a039be-b16e-42fe-86cc-e13d2e43f24d",
+              "uuid": "cde77cca-a7f6-440d-95be-66f173db100f",
+              "parentUUID": "ffda92b6-f732-4a10-b383-96b53ae6f036",
               "isHook": false,
               "skipped": false
             },
@@ -998,35 +1152,35 @@
               "context": null,
               "code": "expect(test_user)\n.which.is.an('object')\n.and.has.property('username')\n.and.equal('BossDev');",
               "err": {},
-              "uuid": "8a03a78a-478f-4963-9f7f-7df6a50faf60",
-              "parentUUID": "23a039be-b16e-42fe-86cc-e13d2e43f24d",
+              "uuid": "92d92c25-7aae-4c19-9e1e-04d04987d27e",
+              "parentUUID": "ffda92b6-f732-4a10-b383-96b53ae6f036",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f6450d75-7e96-4171-9cf7-f19ed873e0c1",
-            "589e7db6-f725-49af-b28d-3c738d79262e",
-            "b4c6ddfc-b11f-42da-885f-a1f3dd668545",
-            "f110100a-dd11-4953-985e-95f5d383a26b",
-            "4ae4fbea-6b92-4e6d-a192-ca2cc555fe06",
-            "6dab7d1a-a779-4fe3-80cc-263989a7cf82",
-            "2c0439f4-a192-4f04-b951-0955913d5d74",
-            "bce43e03-83c7-4d39-bfa0-133e87035ee9",
-            "0aecbbe4-929c-4775-a8ff-0d14c6920283",
-            "8a03a78a-478f-4963-9f7f-7df6a50faf60"
+            "a0b13171-30c5-4210-a582-d248cae5ed54",
+            "c777d15e-8475-407d-ab04-16ec26f15d4f",
+            "2556dd00-5abf-4ddd-a4cf-af6b90a20aa8",
+            "28bc07c3-237d-4271-b49b-929b88c14d1c",
+            "5940a5ea-2430-4d17-9cda-f57f1da2825f",
+            "888524ae-5743-43d3-9bfe-63b40d11eeb3",
+            "92823716-f071-4414-9511-35c6d8b1ccac",
+            "8dc4aaba-4eb6-4aec-b196-f92726fb69f5",
+            "cde77cca-a7f6-440d-95be-66f173db100f",
+            "92d92c25-7aae-4c19-9e1e-04d04987d27e"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2,
+          "duration": 1,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "257e821e-7d68-4cf0-a4c2-e00c43f6d03b",
+          "uuid": "f611541b-d6d0-44fc-aa75-ebf67f82e68a",
           "title": "Validate User Method",
           "fullFile": "C:\\Users\\rlond\\Desktop\\Code\\store\\backend\\src\\models\\test\\user-test.js",
           "file": "\\src\\models\\test\\user-test.js",
@@ -1046,8 +1200,8 @@
               "context": null,
               "code": "const result = handleUserErrors(test_user);\nexpect(result.error).to.equal(undefined);",
               "err": {},
-              "uuid": "c42064a5-b989-4273-9f5b-8064df646ab1",
-              "parentUUID": "257e821e-7d68-4cf0-a4c2-e00c43f6d03b",
+              "uuid": "0ad62f03-f61b-436e-a9d1-48f3c40f2801",
+              "parentUUID": "f611541b-d6d0-44fc-aa75-ebf67f82e68a",
               "isHook": false,
               "skipped": false
             },
@@ -1055,7 +1209,7 @@
               "title": "should fail a user with incorrect schema requirements",
               "fullTitle": "Validate User Method should fail a user with incorrect schema requirements",
               "timedOut": false,
-              "duration": 7,
+              "duration": 9,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -1064,27 +1218,27 @@
               "context": null,
               "code": "test_user.password = \"1\";\nconst result = handleUserErrors(test_user);\nassert.rejects(() => {\n    const result = handleUserErrors(test_user);\n}, (err) => err === result.error.details[0].message)",
               "err": {},
-              "uuid": "8e5d3dbe-2a14-4eef-a471-55cb9b11bffc",
-              "parentUUID": "257e821e-7d68-4cf0-a4c2-e00c43f6d03b",
+              "uuid": "cdf6b928-a854-410e-8178-caa9d5f63078",
+              "parentUUID": "f611541b-d6d0-44fc-aa75-ebf67f82e68a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c42064a5-b989-4273-9f5b-8064df646ab1",
-            "8e5d3dbe-2a14-4eef-a471-55cb9b11bffc"
+            "0ad62f03-f61b-436e-a9d1-48f3c40f2801",
+            "cdf6b928-a854-410e-8178-caa9d5f63078"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 26,
+          "duration": 28,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "2b5181a8-38d9-4b9e-9dc3-33d4b899448e",
+          "uuid": "f3c9e9f3-20b3-4e3c-8574-ea860f418e7d",
           "title": "Mongoose",
           "fullFile": "C:\\Users\\rlond\\Desktop\\Code\\store\\backend\\test\\server-test.js",
           "file": "\\test\\server-test.js",
@@ -1102,8 +1256,8 @@
               "context": null,
               "code": "conn_dev  = await mongoose.createConnection(mongo_test_uri).asPromise();\nconn_test = await mongoose.createConnection(mongo_dev_uri).asPromise();\nassert.rejects(async () => {\n    conn_invalid = await mongoose.createConnection(mongo_invalid_uri).asPromise();\n}, (err) => err === 'Invalid scheme, expected connection string to start with \"mongodb://\" or \"mongodb+srv://\"');\nreturn;",
               "err": {},
-              "uuid": "f7977dc5-3525-488c-8945-4a4aa7ddcd4a",
-              "parentUUID": "2b5181a8-38d9-4b9e-9dc3-33d4b899448e",
+              "uuid": "2ab5d957-f87a-470d-851c-42b45e148df3",
+              "parentUUID": "f3c9e9f3-20b3-4e3c-8574-ea860f418e7d",
               "isHook": true,
               "skipped": false
             }
@@ -1114,7 +1268,7 @@
               "title": "shouldnt connect to DB with incorrect prefix",
               "fullTitle": "Mongoose shouldnt connect to DB with incorrect prefix",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -1123,8 +1277,8 @@
               "context": null,
               "code": "let conn_invalid = mongoose.createConnection(mongo_invalid_uri);\nconst ready = conn_invalid.readyState;\nassert.equal(ready, 0);\ndone();",
               "err": {},
-              "uuid": "373511a9-9c3d-445c-8ace-8c40b40f8934",
-              "parentUUID": "2b5181a8-38d9-4b9e-9dc3-33d4b899448e",
+              "uuid": "3b0d1c20-8704-400c-9869-92e9249e3634",
+              "parentUUID": "f3c9e9f3-20b3-4e3c-8574-ea860f418e7d",
               "isHook": false,
               "skipped": false
             },
@@ -1132,7 +1286,7 @@
               "title": "should connect to Spec Test DB",
               "fullTitle": "Mongoose should connect to Spec Test DB",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -1141,8 +1295,8 @@
               "context": null,
               "code": "const ready = conn_test.readyState;\n\nassert.equal(ready, 1);\ndone();",
               "err": {},
-              "uuid": "f42b17f3-00b9-4122-81e9-42edf4a93006",
-              "parentUUID": "2b5181a8-38d9-4b9e-9dc3-33d4b899448e",
+              "uuid": "b9031615-c0be-4240-b3be-f8941eae9b3c",
+              "parentUUID": "f3c9e9f3-20b3-4e3c-8574-ea860f418e7d",
               "isHook": false,
               "skipped": false
             },
@@ -1159,17 +1313,17 @@
               "context": null,
               "code": "const ready = conn_dev.readyState;\n\nassert.equal(ready, 1);\ndone();",
               "err": {},
-              "uuid": "c6c397ab-395c-4d97-bdb2-ffddb44d1fa2",
-              "parentUUID": "2b5181a8-38d9-4b9e-9dc3-33d4b899448e",
+              "uuid": "bed47a55-1a1d-47cc-9198-b3b6ad8a9529",
+              "parentUUID": "f3c9e9f3-20b3-4e3c-8574-ea860f418e7d",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "373511a9-9c3d-445c-8ace-8c40b40f8934",
-            "f42b17f3-00b9-4122-81e9-42edf4a93006",
-            "c6c397ab-395c-4d97-bdb2-ffddb44d1fa2"
+            "3b0d1c20-8704-400c-9869-92e9249e3634",
+            "b9031615-c0be-4240-b3be-f8941eae9b3c",
+            "bed47a55-1a1d-47cc-9198-b3b6ad8a9529"
           ],
           "failures": [],
           "pending": [],
@@ -1180,7 +1334,7 @@
           "_timeout": 2000
         },
         {
-          "uuid": "f7c73642-f28c-4b4c-906c-004d6278375c",
+          "uuid": "ae65109b-9e18-49e3-8abb-f935b698d771",
           "title": "Port Definition",
           "fullFile": "C:\\Users\\rlond\\Desktop\\Code\\store\\backend\\test\\server-test.js",
           "file": "\\test\\server-test.js",
@@ -1200,15 +1354,15 @@
               "context": null,
               "code": "expect(port).to.exist;\ndone();",
               "err": {},
-              "uuid": "f7cc8b31-a114-4e1f-9dac-087c9747313b",
-              "parentUUID": "f7c73642-f28c-4b4c-906c-004d6278375c",
+              "uuid": "39423f04-b492-4b85-8285-3d358aece135",
+              "parentUUID": "ae65109b-9e18-49e3-8abb-f935b698d771",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f7cc8b31-a114-4e1f-9dac-087c9747313b"
+            "39423f04-b492-4b85-8285-3d358aece135"
           ],
           "failures": [],
           "pending": [],
@@ -1219,7 +1373,7 @@
           "_timeout": 2000
         },
         {
-          "uuid": "d029821a-0657-4e7f-bdf6-1a4890eb5609",
+          "uuid": "034bf248-577f-4fc8-ad0b-e44a08e613e5",
           "title": "Express",
           "fullFile": "C:\\Users\\rlond\\Desktop\\Code\\store\\backend\\test\\server-test.js",
           "file": "\\test\\server-test.js",
@@ -1237,8 +1391,8 @@
               "context": null,
               "code": "server.close();\nserver.listen(port, () => {\n    console.log(`spec test server should open on port ${port}`);\n    done();\n});",
               "err": {},
-              "uuid": "5df743d2-aca9-4243-8ba1-dd127df46107",
-              "parentUUID": "d029821a-0657-4e7f-bdf6-1a4890eb5609",
+              "uuid": "38e9bcf5-4152-4e9a-9a2f-a6ac0722ea44",
+              "parentUUID": "034bf248-577f-4fc8-ad0b-e44a08e613e5",
               "isHook": true,
               "skipped": false
             }
@@ -1248,7 +1402,7 @@
               "title": "\"after all\" hook in \"Express\"",
               "fullTitle": "Express \"after all\" hook in \"Express\"",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": null,
               "speed": null,
               "pass": false,
@@ -1257,8 +1411,8 @@
               "context": null,
               "code": "server.close();\nconsole.log(`spec test server should close on port ${port}`);",
               "err": {},
-              "uuid": "33b913f7-6fdb-49db-9b59-ffc863e27598",
-              "parentUUID": "d029821a-0657-4e7f-bdf6-1a4890eb5609",
+              "uuid": "d1f232de-8fbd-4659-8c52-359180f9d814",
+              "parentUUID": "034bf248-577f-4fc8-ad0b-e44a08e613e5",
               "isHook": true,
               "skipped": false
             }
@@ -1277,15 +1431,15 @@
               "context": null,
               "code": "return await request.get('/', (req, res) => {\n    expect(res.status).to.equal(200);\n});",
               "err": {},
-              "uuid": "5e96f160-5b92-47f1-8ef5-8c49f483f326",
-              "parentUUID": "d029821a-0657-4e7f-bdf6-1a4890eb5609",
+              "uuid": "60098c88-89d7-4c47-89f0-02fbfec71ec4",
+              "parentUUID": "034bf248-577f-4fc8-ad0b-e44a08e613e5",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "5e96f160-5b92-47f1-8ef5-8c49f483f326"
+            "60098c88-89d7-4c47-89f0-02fbfec71ec4"
           ],
           "failures": [],
           "pending": [],

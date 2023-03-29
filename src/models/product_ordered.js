@@ -5,16 +5,18 @@ const { product_schema } = require("./product");
 
 
 const product_ordered_schema = new mongoose.Schema({
-    quantity: { //This application does not have a user model. Will either need to add or find another method
+    quantity: {
         type: Number,
         required: true
     },
     order_id: {
-        type: order_schema,
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Order",
         required: true
     },
     product_id: {
-        type: product_schema,
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Product",
         required: true
     }
 });
@@ -23,8 +25,8 @@ const Product_Ordered = mongoose.model("Product_Order", product_ordered_schema);
 function handleProductOrderedErrors(productOrdered) {
     const schema = Joi.object({
         quantity: Joi.number().required(),
-        order_id: Joi.string().required(),
-        product_id: Joi.string().required()
+        order_id: Joi.required(),
+        product_id: Joi.required()
     })
     return schema.validate(productOrdered);
 }
