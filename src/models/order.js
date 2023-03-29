@@ -3,8 +3,9 @@ const Joi = require("joi");
 
 
 const order_schema = new mongoose.Schema({
-    user_id: { //This application does not have a user model. Will either need to add or find another method
-        type: String,
+    user_id: { 
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
         required: true
     },
     order_status: {
@@ -16,7 +17,7 @@ const Order = mongoose.model("Order", order_schema);
 
 function handleOrderErrors(order) {
     const schema = Joi.object({
-        user_id: Joi.string().required(),
+        user_id: Joi.required(),
         order_status: Joi.boolean().required(),
     })
     return schema.validate(order);
