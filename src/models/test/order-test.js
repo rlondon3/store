@@ -3,8 +3,8 @@ const {Order, order_schema} = require("../../models/order");
 
 const expect = chai.expect;
 
-describe("Order", () => {
-    it("should have model", () => {
+describe("Order Model", () => {
+    it("should have defined model", () => {
         expect(Order).to.exist;
     });
 });

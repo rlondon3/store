@@ -17,8 +17,8 @@ const test_user = {
     username: "BossDev",
 }
 
-describe("User", () => {
-    it("should have model", () => {
+describe("User Model", () => {
+    it("should have a defined model", () => {
         expect(User).to.exist;
     });
 });
@@ -73,61 +73,61 @@ describe("User Schema", () => {
     });
 });
 describe("Test User", () => {
-    it("should have an id", () => {
+    it("should have a value for id", () => {
         expect(user)
         .which.is.an('object')
         .and.has.property('_id')
         .and.not.equal('undefined');
     });
-    it("should have a first name", () => {
+    it("should have a value first name", () => {
         expect(test_user)
         .which.is.an('object')
         .and.has.property('first_name')
         .and.equal('Ralphie');
     });
-    it("should have a last name", () => {
+    it("should have a value for last name", () => {
         expect(test_user)
         .which.is.an('object')
         .and.has.property('last_name')
         .and.equal('London');
     });
-    it("should have an address", () => {
+    it("should have a value for address", () => {
         expect(test_user)
         .which.is.an('object')
         .and.has.property('address')
         .and.equal('3131 Trap Ave');
     });
-    it("should have a city", () => {
+    it("should have a value for city", () => {
         expect(test_user)
         .which.is.an('object')
         .and.has.property('city')
         .and.equal('Atlanta');
     });
-    it("should have a state", () => {
+    it("should have a value for state", () => {
         expect(test_user)
         .which.is.an('object')
         .and.has.property('state')
         .and.equal('GA');
     });
-    it("should have a zip code", () => {
+    it("should have a value zip code", () => {
         expect(test_user)
         .which.is.an('object')
         .and.has.property('zip')
         .and.equal(30032);
     });
-    it("should have an email", () => {
+    it("should have a value for email", () => {
         expect(test_user)
         .which.is.an('object')
         .and.has.property('email')
         .and.equal('ralphieLondon@store.com');
     });
-    it("should have a password", () => {
+    it("should have a value for password", () => {
         expect(test_user)
         .which.is.an('object')
         .and.has.property('password')
         .and.equal('Store1234!');
     });
-    it("should have a username", () => {
+    it("should have a value for username", () => {
         expect(test_user)
         .which.is.an('object')
         .and.has.property('username')
@@ -139,12 +139,12 @@ describe("Validate User Method", () => {
         const result = handleUserErrors(test_user);
         expect(result.error).to.equal(undefined);
     });
-    it("should fail with incorrect schema requirements", () => {
+    it("should fail a user with incorrect schema requirements", () => {
         test_user.password = "1";
         const result = handleUserErrors(test_user);
         assert.rejects(() => {
             const result = handleUserErrors(test_user);
         }, (err) => err === result.error.details[0].message)
-    })
+    });
    
 })
