@@ -1,10 +1,7 @@
 const chai = require('chai');
-const { object } = require('joi');
 const {Order, order_schema} = require("../../models/order");
 
 const expect = chai.expect;
-const assert = chai.assert;
-const should = chai.should();
 
 describe("Order", () => {
     it("should have model", () => {
@@ -25,4 +22,4 @@ describe("Order Schema", () => {
         .which.is.an('object')
         .and.has.property('order_status')
     });
-})
+});
