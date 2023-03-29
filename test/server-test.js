@@ -55,7 +55,7 @@ describe('Mongoose', () => {
     });
 });
 describe('Port Definition', () => {
-    it ('should pass if defined', (done) => {
+    it ('should be defined', (done) => {
         expect(port).to.exist;
         done();
     });
@@ -71,10 +71,10 @@ describe('Express', () => {
     after(() => {
         server.close();
         console.log(`spec test server should close on port ${port}`);
-    })
-    it('spec test application should connect with status 200', async () => {
+    });
+    it('spec test server should connect with status 200', async () => {
         return await request.get('/', (req, res) => {
             expect(res.status).to.equal(200);
         });
-    })
+    });
 });
